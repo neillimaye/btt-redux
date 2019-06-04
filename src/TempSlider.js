@@ -1,17 +1,16 @@
 import React from 'react';
 import TerpReport from './TerpReport'
-import Slider from 'rc-slider';
+import Roundy from 'roundy';
 
-export class TempSlider extends React.Component{
+
+export default class TempSlider extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      // this is going to be a regular object print
       min: 120,
       max: 500,
       step: 1,
       value: 130,
-      // strain attribute could become its own class later on
       strain: {
         name: "Charlotte's Web",
         cannabinoids: {
@@ -50,9 +49,9 @@ export class TempSlider extends React.Component{
   render() {
     return(
       <div>
-        <Slider value={this.state.value} min={this.state.min} max={this.state.max} step={this.state.step}
+        <Roundy value={this.state.value} min={this.state.min} max={this.state.max} step={this.state.step}
         onChange={this.onSliderChange}/>
-        <br /><br />
+        <p></p>
         <p><label>Strain: {this.state.strain.name}</label> </p>
         <TerpReport temperature = {this.state.value} strain = {this.state.strain}/>
 
