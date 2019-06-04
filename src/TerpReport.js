@@ -26,8 +26,14 @@ function TerpReport (props){
     var caneffect = oxfordcomma(ceff);
     var terpreport = oxfordcomma(trel);
     var terpeffect = oxfordcomma(teff);
-
-
+    if (crel.length === 0){
+      canreport = "nothing";
+      caneffect = "nothing";
+    }
+    if (trel.length === 0){
+      terpreport = "nothing";
+      terpeffect = "nothing";
+    }
 
 
   return(
