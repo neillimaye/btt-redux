@@ -14,27 +14,38 @@ export default class TempSlider extends React.Component{
       strain: {
         name: "Charlotte's Web",
         cannabinoids: {
-          "CBN":{
-            name: "Cannabineil",
-            bp: 130,
-            effects: ["hungry", "less nauseated", "uplifted"],
+          "CBG-A":{
+            name: "Cannabigerol" ,
+            bp: 428,
+            effects: ["reduced intraocular pressure", "decreased inflammation"],
+            percentage: .21,
           },
-          "CBC":{
-            name: "Cannabichromene",
-            bp: 140,
-            effects: ["less stressed", "giggly"]
-          }
+          "CBD":{
+            name:"Cannabidiol",
+            bp:356,
+            effects:["less anxious","less dizzy"],
+            percentage:11.50,
+          },
+          "THC":{
+            name:"Tetrahydracannabidiol",
+            bp:315,
+            effects:["relaxed","heightened senses"],
+            percentage:.49,
+          },
+
         },
         terpenes:{
-          "Limonene":{
-            name: "Limonene",
-            bp: 150,
-            effects: ["like", "so", "totally stoned man"],
+          "Linalool":{
+            name: "Linalool",
+            bp: 388.4,
+            effects: ["less anxious", "uplifted"],
+            percentage: 2.84
           },
           "a-Pienene":{
             name: "Alpha Pienene",
-            bp: 160,
-            effects: ["pretty", "oh so pretty", "that the city should give me it's key!"]
+            bp: 311,
+            effects: ["alert", "less anxious"],
+            percentage: .72,
           }
         }
       }

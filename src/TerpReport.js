@@ -1,11 +1,7 @@
 import React from 'react';
 import oxfordcomma from './oxfordcomma';
-
 function TerpReport (props){
-    var crel = [];
-    var ceff = [];
-    var trel = [];
-    var teff = [];
+    var crel = []; var ceff = []; var trel = []; var teff = [];
     Object.keys(props.strain.cannabinoids).forEach(function(can){
         if (props.temperature >= props.strain.cannabinoids[can].bp){
           crel.push(props.strain.cannabinoids[can].name);
@@ -22,28 +18,16 @@ function TerpReport (props){
           });
         };
     });
-    var canreport = oxfordcomma(crel);
-    var caneffect = oxfordcomma(ceff);
-    var terpreport = oxfordcomma(trel);
-    var terpeffect = oxfordcomma(teff);
-    if (crel.length === 0){
-      canreport = "nothing";
-      caneffect = "nothing";
-    }
-    if (trel.length === 0){
-      terpreport = "nothing";
-      terpeffect = "nothing";
-    }
-
-
+    var canreport = oxfordcomma(crel); var caneffect = oxfordcomma(ceff);
+    var terpreport = oxfordcomma(trel); var terpeffect = oxfordcomma(teff);
+    //returns "nothing" if the size of the input arrays are zero
   return(
     <div>
-    <h2> At {props.temperature}&#176;F, </h2>
-    <label>You will release {canreport} while feeling {caneffect}</label>
+    <h2> At {props.temperature}&#176;F,</h2>
+    <label>Cannabinoids: You will release {canreport} while feeling {caneffect}.</label>
     <p></p>
-    <label>You'll get terpenes {terpreport} while feeling {terpeffect}</label>
+    <label>Terpenes: You will release {terpreport} while feeling {terpeffect}.</label>
     </div>
   )
-
 }
 export default TerpReport;

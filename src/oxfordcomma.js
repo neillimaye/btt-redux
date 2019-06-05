@@ -1,6 +1,9 @@
 function oxfordcomma(arr){
     var outStr = "";
-    if (arr.length === 1) {
+    if (arr.length === 0){
+      return "nothing"
+    }
+    else if (arr.length === 1) {
         outStr = arr[0];
     } else if (arr.length === 2) {
         outStr = arr.join(' and ');
