@@ -27,7 +27,7 @@ export default class TempSlider extends React.Component{
             percentage:11.50,
           },
           "THC":{
-            name:"Tetrahydracannabidiol",
+            name:"Tetrahydrocannabidiol",
             bp:315,
             effects:["relaxed","heightened senses"],
             percentage:.49,
