@@ -1,3 +1,6 @@
+// any questions? email me - neil.limaye108@gmail.com
+
+
 strains = {
   "Charlotte's Web":{
       cans:[cannabinoids["CBG-A"],
