@@ -3,15 +3,18 @@
 
 strains = {
   "Charlotte's Web":{
-      cans:[cannabinoids["CBG-A"],
-        cannabinoids["CBD"],
-        cannabinoids["THC"],],
-      terps: [
-        terpenes["Linalool"],
-        terpenes["a-Pienene"]
-      ]
-      }
-    }
+    cans:[cannabinoids["CBG-A"],
+      cannabinoids["CBD"],
+      cannabinoids["THC"],],
+    terps: [
+      terpenes["Linalool"],
+      terpenes["a-Pienene"]
+    ]
+  },
+  "Blue Dream":{
+
+  }
+  }
 
 
 cannabinoids = {
@@ -50,3 +53,5 @@ terpenes = {
     percentage: .72,
   }
 }
+
+export default strains
