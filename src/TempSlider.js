@@ -1,6 +1,5 @@
 import React from 'react';
 import TerpReport from './TerpReport'
-import Roundy from 'roundy';
 
 
 export default class TempSlider extends React.Component{
