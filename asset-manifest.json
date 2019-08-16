@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bettertemptool/static/css/main.2cce8147.chunk.css",
+    "main.js": "/bettertemptool/static/js/main.be81ee5a.chunk.js",
+    "main.js.map": "/bettertemptool/static/js/main.be81ee5a.chunk.js.map",
+    "runtime~main.js": "/bettertemptool/static/js/runtime~main.44ff9878.js",
+    "runtime~main.js.map": "/bettertemptool/static/js/runtime~main.44ff9878.js.map",
+    "static/js/2.9cdfc31b.chunk.js": "/bettertemptool/static/js/2.9cdfc31b.chunk.js",
+    "static/js/2.9cdfc31b.chunk.js.map": "/bettertemptool/static/js/2.9cdfc31b.chunk.js.map",
+    "index.html": "/bettertemptool/index.html",
+    "precache-manifest.3ae6f9b873f3a43db84f3a7e7cf915da.js": "/bettertemptool/precache-manifest.3ae6f9b873f3a43db84f3a7e7cf915da.js",
+    "service-worker.js": "/bettertemptool/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/bettertemptool/static/css/main.2cce8147.chunk.css.map"
+  }
+}
