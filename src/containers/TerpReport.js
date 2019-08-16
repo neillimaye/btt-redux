@@ -38,7 +38,7 @@ class TerpReport extends React.Component{
     render(){
       const strain = this.props.strain;
       console.log("Should log the active strain: \n" + this.strain)
-
+      //shows up as undefined 
       return(
         <div>
         </div>
