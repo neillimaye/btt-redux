@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f421e705ab3ddc2d5bfa7dfb724b9fe7",
+    "revision": "951d67986041a8c2d12734770f9ee5ec",
     "url": "/bettertemptool/index.html"
   },
   {
-    "revision": "0dd99e48bc624948a864",
+    "revision": "89f72d8617e1db9e1182",
     "url": "/bettertemptool/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bettertemptool/static/js/2.9cdfc31b.chunk.js"
   },
   {
-    "revision": "0dd99e48bc624948a864",
-    "url": "/bettertemptool/static/js/main.4fa802db.chunk.js"
+    "revision": "89f72d8617e1db9e1182",
+    "url": "/bettertemptool/static/js/main.1289ef1c.chunk.js"
   },
   {
     "revision": "6241f91b33ffc4eb0a2d",
