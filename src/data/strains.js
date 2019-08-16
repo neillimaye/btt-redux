@@ -1,23 +1,7 @@
 // any questions? email me - neil.limaye108@gmail.com
 
 
-strains = {
-  "Charlotte's Web":{
-    cans:[cannabinoids["CBG-A"],
-      cannabinoids["CBD"],
-      cannabinoids["THC"],],
-    terps: [
-      terpenes["Linalool"],
-      terpenes["a-Pienene"]
-    ]
-  },
-  "Blue Dream":{
-
-  }
-  }
-
-
-cannabinoids = {
+const cannabinoids = {
     "CBG-A":{
       name: "Cannabigerol",
       bp: 428,
@@ -39,7 +23,7 @@ cannabinoids = {
 
 }
 
-terpenes = {
+const terpenes = {
   "Linalool":{
     name: "Linalool",
     bp: 388.4,
@@ -54,4 +38,26 @@ terpenes = {
   }
 }
 
-export default strains
+const strains = {
+  "Charlotte's Web":{
+    name: "Charlotte's Web",
+    cans:[cannabinoids["CBG-A"],
+      cannabinoids["CBD"],
+      cannabinoids["THC"],],
+    terps: [
+      terpenes["Linalool"],
+      terpenes["a-Pienene"]
+    ]
+  },
+  "Blue Dream":{
+    name: "Blue Dream",
+    cans:[cannabinoids["CBG-A"],
+      cannabinoids["THC"],],
+    terps: [
+      terpenes["a-Pienene"]
+    ]
+  }
+  }
+
+
+export default strains;
