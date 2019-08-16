@@ -6,16 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import ReduxThunk from 'redux-thunk';
-
 import reducers from './reducers'
 
 
-const initialState = {
-  strain : {
-    name : "No Strain selected"
-  },
-  temperature : 100
-}
+import initialState from './data/initialState'
+
 
 ReactDOM.render(
   <Provider store={createStore(reducers,initialState,applyMiddleware(ReduxThunk))}>

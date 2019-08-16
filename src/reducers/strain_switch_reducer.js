@@ -1,14 +1,6 @@
 import strains from '../data/strains.js'
-
-const BLUEDREAM = 'BLUEDREAM';
-const CWEB = 'CWEB';
-
-const initialState = {
-  strain : {
-    name : "No Strain selected"
-  },
-  temperature: 100
-}
+import initialState from '../data/initialState'
+import {CWEB, BLUEDREAM} from '../data/actionConstants'
 
 export default function (state = initialState, action) {
   switch(action.type){
@@ -18,6 +10,7 @@ export default function (state = initialState, action) {
     case BLUEDREAM:
       // console.log("I should be changing to BD")
       return strains["Blue Dream"];
+    default:
+      return state;
   }
-  return state;
 }

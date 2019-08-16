@@ -1,15 +1,5 @@
-import strains from '../data/strains.js'
-
-const BLUEDREAM = 'BLUEDREAM';
-const CWEB = 'CWEB';
-const CHANGETEMP = 'CHANGETEMP'
-
-const initialState = {
-  strain : {
-    name : "No Strain selected"
-  },
-  temperature: 100
-}
+import initialState from '../data/initialState'
+import {CHANGETEMP} from '../data/actionConstants'
 
 export default function (state = initialState, action) {
   switch(action.type){

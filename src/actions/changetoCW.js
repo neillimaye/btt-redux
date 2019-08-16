@@ -1,5 +1,4 @@
-const BLUEDREAM = 'BLUEDREAM';
-const CWEB = 'CWEB';
+import {CWEB} from '../data/actionConstants'
 
 export function changetoCWAction() {
   return {

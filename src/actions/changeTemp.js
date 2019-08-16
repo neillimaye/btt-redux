@@ -1,6 +1,5 @@
-const BLUEDREAM = 'BLUEDREAM';
-const CWEB = 'CWEB';
-const CHANGETEMP = 'CHANGETEMP'
+import {CHANGETEMP} from '../data/actionConstants'
+
 
 export function changeTempAction(){
   return{

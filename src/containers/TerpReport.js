@@ -1,46 +1,36 @@
 import React from 'react';
-import oxfordcomma from './helpers/oxfordcomma';
 import {connect} from 'react-redux'
+import { bindActionCreators } from 'redux'
+import oxfordcomma from './helpers/oxfordcomma';
+
 class TerpReport extends React.Component{
-    //
-    // var crel = []; var ceff = []; var trel = []; var teff = [];
-    // Object.keys(props.strain.cannabinoids).forEach(function(can){
-    //     if (props.temperature >= props.strain.cannabinoids[can].bp){
-    //       crel.push(props.strain.cannabinoids[can].name);
-    //       props.strain.cannabinoids[can].effects.forEach(function(effect){
-    //         ceff.push(effect);
-    //       });
-    //     };
-    // });
-    // rewrite these into one function that can work with any list?
-    // aka, abstractify as much as possible
-    // why? just cause i guess, also makes updating easier
-    // Object.keys(props.strain.terpenes).forEach(function(terp){
-    //     if (props.temperature >= props.strain.terpenes[terp].bp){
-    //       trel.push(terp);
-    //       props.strain.terpenes[terp].effects.forEach(function(effect){
-    //         teff.push(effect);
-    //       });
-    //     };
-    // });
-    // var canreport = oxfordcomma(crel); var caneffect = oxfordcomma(ceff);
-    // var terpreport = oxfordcomma(trel); var terpeffect = oxfordcomma(teff);
-    // //returns "nothing" if the size of the input arrays are zero
-
-    //
-    // <h2> At {props.temperature}&#176;F,</h2>
-    // <label>Cannabinoids: You will release {canreport} while feeling {caneffect}.</label>
-    // <p></p>
-    // <label>Terpenes: You will release {terpreport} while feeling {terpeffect}.</label>
-
-
-
     render(){
-      const strain = this.props.strain;
-      console.log("Should log the active strain: \n" + this.strain)
-      //shows up as undefined 
+      var crel = []; var ceff = []; var trel = []; var teff = [];
+      const cans = this.props.strain.cans;
+      const terps = this.props.strain.terps;
+      const temperature = this.props.temperature;
+      Object.keys(cans).forEach(function(can){
+        if (temperature >= cans[can].bp){
+          crel.push(cans[can].name);
+          cans[can].effects.forEach(function(effect){
+            ceff.push(effect);
+          });
+        };
+      });
+      // console.log(crel); proof this works
+      // console.log(ceff);
+      Object.keys(terps).forEach(function(terp){
+        if (temperature >= terps[terp].bp){
+          trel.push(terps[terp].name);
+          terps[terp].effects.forEach(function(effect){
+            teff.push(effect);
+          });
+        };
+      });
       return(
         <div>
+          <p> At {temperature}, you will release the cannabinoids {oxfordcomma(crel)} and feel {oxfordcomma(ceff)}</p>
+          <p> You will release the terpenes {oxfordcomma(trel)} and feel {oxfordcomma(teff)}</p>
         </div>
       )
 
@@ -48,15 +38,13 @@ class TerpReport extends React.Component{
 
 }
 function mapDispatchToProps(dispatch){
-
+  return bindActionCreators({
+  }, dispatch);
 }
-
-function mapStateToProps(state){
+function mapStateToProps(state) {
   return {
     strain: state.strain,
     temperature: state.temperature,
   }
 }
-
-
-export default connect(mapStateToProps)(TerpReport);
+export default connect(mapStateToProps, mapDispatchToProps)(TerpReport)

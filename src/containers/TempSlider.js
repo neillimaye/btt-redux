@@ -4,7 +4,7 @@ import { changetoCWAction } from '../actions/changetoCW'
 import { changetoBDAction } from '../actions/changetoBD'
 import { changeTempAction } from '../actions/changeTemp'
 import { bindActionCreators } from 'redux'
-
+import TerpReport from '../containers/TerpReport'
 
 class TempSlider extends React.Component{
   render() {
@@ -32,6 +32,9 @@ class TempSlider extends React.Component{
         this.props.changeTemp();}
       }
       >Temp up</button>
+
+      <TerpReport />
+
 
       </div>
     )

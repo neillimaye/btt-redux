@@ -41,9 +41,11 @@ const terpenes = {
 const strains = {
   "Charlotte's Web":{
     name: "Charlotte's Web",
-    cans:[cannabinoids["CBG-A"],
+    cans: [
+      cannabinoids["CBG-A"],
       cannabinoids["CBD"],
-      cannabinoids["THC"],],
+      cannabinoids["THC"]
+    ],
     terps: [
       terpenes["Linalool"],
       terpenes["a-Pienene"]
@@ -51,10 +53,13 @@ const strains = {
   },
   "Blue Dream":{
     name: "Blue Dream",
-    cans:[cannabinoids["CBG-A"],
-      cannabinoids["THC"],],
+    cans:[
+      cannabinoids["CBG-A"],
+      cannabinoids["THC"],
+    ],
     terps: [
-      terpenes["a-Pienene"]
+      terpenes["a-Pienene"],
+      terpenes["Linalool"],
     ]
   }
   }
