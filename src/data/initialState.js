@@ -3,16 +3,16 @@ const initialState = {
     name : "No",
     cans : {
       "No cannabinoids": {
-        name: "wow screw you",
-        bp: 100,
-        effects: ["i don't", "do anything"]
+        name: "Not a cannabinoid",
+        bp: 250,
+        effects: ["press one of the buttons", "watch the magic happen"]
       },
     },
     terps :{
         "No Terps":{
           name: "Not a Terpene",
-          bp: 210,
-          effects: ["I do", "nothing either"]
+          bp: 300,
+          effects: ["see above", "don't forget to bring a towel"]
         }
     }
   },

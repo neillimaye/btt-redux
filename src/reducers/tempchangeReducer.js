@@ -2,10 +2,11 @@ import initialState from '../data/initialState'
 import {CHANGETEMP} from '../data/actionConstants'
 
 export default function (state = initialState, action) {
+  // console.log ("I should be changing changing the temperature to");
+  // console.log(action.temp)
   switch(action.type){
-    // console.log ("I am changing the temperature")
     case CHANGETEMP:
-      return state+1;
+      return action.temp;
     default:
       return state;
   }
