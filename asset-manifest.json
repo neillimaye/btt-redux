@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bttredux/static/css/main.2cce8147.chunk.css",
-    "main.js": "/bttredux/static/js/main.d212a6c8.chunk.js",
-    "main.js.map": "/bttredux/static/js/main.d212a6c8.chunk.js.map",
+    "main.js": "/bttredux/static/js/main.38f63781.chunk.js",
+    "main.js.map": "/bttredux/static/js/main.38f63781.chunk.js.map",
     "runtime~main.js": "/bttredux/static/js/runtime~main.fc54fb1f.js",
     "runtime~main.js.map": "/bttredux/static/js/runtime~main.fc54fb1f.js.map",
-    "static/js/2.604e9e95.chunk.js": "/bttredux/static/js/2.604e9e95.chunk.js",
-    "static/js/2.604e9e95.chunk.js.map": "/bttredux/static/js/2.604e9e95.chunk.js.map",
+    "static/js/2.97871456.chunk.js": "/bttredux/static/js/2.97871456.chunk.js",
+    "static/js/2.97871456.chunk.js.map": "/bttredux/static/js/2.97871456.chunk.js.map",
     "index.html": "/bttredux/index.html",
-    "precache-manifest.b27c90e901d7acce4c4104977ce82594.js": "/bttredux/precache-manifest.b27c90e901d7acce4c4104977ce82594.js",
+    "precache-manifest.dda81c65061ec6aef92ed08ec6075bde.js": "/bttredux/precache-manifest.dda81c65061ec6aef92ed08ec6075bde.js",
     "service-worker.js": "/bttredux/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/bttredux/static/css/main.2cce8147.chunk.css.map"
   }
