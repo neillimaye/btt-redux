@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/btt-redux/static/css/main.2cce8147.chunk.css",
-    "main.js": "/btt-redux/static/js/main.858e2d18.chunk.js",
-    "main.js.map": "/btt-redux/static/js/main.858e2d18.chunk.js.map",
-    "runtime~main.js": "/btt-redux/static/js/runtime~main.38d4ceba.js",
-    "runtime~main.js.map": "/btt-redux/static/js/runtime~main.38d4ceba.js.map",
-    "static/js/2.18e9ab59.chunk.js": "/btt-redux/static/js/2.18e9ab59.chunk.js",
-    "static/js/2.18e9ab59.chunk.js.map": "/btt-redux/static/js/2.18e9ab59.chunk.js.map",
-    "index.html": "/btt-redux/index.html",
-    "precache-manifest.f953c673248208c812ca1c4df8fa11f0.js": "/btt-redux/precache-manifest.f953c673248208c812ca1c4df8fa11f0.js",
-    "service-worker.js": "/btt-redux/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/btt-redux/static/css/main.2cce8147.chunk.css.map"
+    "main.css": "/bttredux/static/css/main.2cce8147.chunk.css",
+    "main.js": "/bttredux/static/js/main.d212a6c8.chunk.js",
+    "main.js.map": "/bttredux/static/js/main.d212a6c8.chunk.js.map",
+    "runtime~main.js": "/bttredux/static/js/runtime~main.fc54fb1f.js",
+    "runtime~main.js.map": "/bttredux/static/js/runtime~main.fc54fb1f.js.map",
+    "static/js/2.604e9e95.chunk.js": "/bttredux/static/js/2.604e9e95.chunk.js",
+    "static/js/2.604e9e95.chunk.js.map": "/bttredux/static/js/2.604e9e95.chunk.js.map",
+    "index.html": "/bttredux/index.html",
+    "precache-manifest.b27c90e901d7acce4c4104977ce82594.js": "/bttredux/precache-manifest.b27c90e901d7acce4c4104977ce82594.js",
+    "service-worker.js": "/bttredux/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/bttredux/static/css/main.2cce8147.chunk.css.map"
   }
 }
