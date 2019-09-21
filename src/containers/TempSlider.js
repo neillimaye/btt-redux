@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import { changetoCWAction } from '../actions/changetoCW'
-import { changetoBDAction } from '../actions/changetoBD'
+import { changeStrainAction } from '../actions/changeStrain'
 import { changeTempAction } from '../actions/changeTemp'
 import { bindActionCreators } from 'redux'
 import Roundy from 'roundy'
@@ -22,11 +21,12 @@ class TempSlider extends React.Component{
       <div>
       <Roundy value={temp} min={200} max={500} step={1}
         onChange = {this.handleChange}/>
-      <button type = "button" onClick = {() => { this.props.changetoCW();}}>
-      Charlotte's Web</button>
       <button type = "button" onClick = {() => {
-        this.props.changetoBD();}}>
+        this.props.changeStrain("Blue Dream");}}>
       Blue Dream</button>
+      <button type = "button" onClick = {() => {
+        this.props.changeStrain("Charlotte's Web");}}>
+      Charlotte's Web</button>
       <p> Active strain: {strain.name} at {temp}</p>
       </div>
     )
@@ -35,8 +35,7 @@ class TempSlider extends React.Component{
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({
-    changetoCW: changetoCWAction,
-    changetoBD: changetoBDAction,
+    changeStrain: changeStrainAction,
     changeTemp: changeTempAction
   }, dispatch);
 }
