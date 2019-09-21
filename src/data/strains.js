@@ -130,6 +130,20 @@ const strains = {
       terpenes["Limonene"]
     ]
   },
+  "OG Kush":{
+    name: "OG Kush",
+    cans:[
+      cannabinoids["THC"],
+      cannabinoids["CBN"],
+      cannabinoids["CBC"],
+      cannabinoids["CBG"],      
+    ],
+    terps:[
+      terpenes["Myrcene"],
+      terpenes["Caryophyllene"],
+      terpenes["Limonene"]
+    ]
+  },
 
 }
 const strainnames = Object.keys(strains);

@@ -27,6 +27,15 @@ class TempSlider extends React.Component{
       <button type = "button" onClick = {() => {
         this.props.changeStrain("Charlotte's Web");}}>
       Charlotte's Web</button>
+      <button type = "button" onClick = {() => {
+        this.props.changeStrain("Jack Herer");}}>
+      Jack Herer</button>
+      <button type = "button" onClick = {() => {
+        this.props.changeStrain("Granddaddy Purple");}}>
+      Granddaddy Purple</button>
+      <button type = "button" onClick = {() => {
+        this.props.changeStrain("OG Kush");}}>
+      OG Kush</button>
       <p> Active strain: {strain.name} at {temp}</p>
       </div>
     )
