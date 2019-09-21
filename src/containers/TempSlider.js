@@ -21,22 +21,24 @@ class TempSlider extends React.Component{
       <div>
       <Roundy value={temp} min={200} max={500} step={1}
         onChange = {this.handleChange}/>
-      <button type = "button" onClick = {() => {
-        this.props.changeStrain("Blue Dream");}}>
-      Blue Dream</button>
-      <button type = "button" onClick = {() => {
-        this.props.changeStrain("Charlotte's Web");}}>
-      Charlotte's Web</button>
-      <button type = "button" onClick = {() => {
-        this.props.changeStrain("Jack Herer");}}>
-      Jack Herer</button>
-      <button type = "button" onClick = {() => {
-        this.props.changeStrain("Granddaddy Purple");}}>
-      Granddaddy Purple</button>
-      <button type = "button" onClick = {() => {
-        this.props.changeStrain("OG Kush");}}>
-      OG Kush</button>
-      <p> Active strain: {strain.name} at {temp}</p>
+        <div>
+          <button type = "button" onClick = {() => {
+            this.props.changeStrain("Blue Dream");}}>
+          Blue Dream</button>
+          <button type = "button" onClick = {() => {
+            this.props.changeStrain("Charlotte's Web");}}>
+          Charlotte's Web</button>
+          <button type = "button" onClick = {() => {
+            this.props.changeStrain("Jack Herer");}}>
+          Jack Herer</button>
+          <button type = "button" onClick = {() => {
+            this.props.changeStrain("Granddaddy Purple");}}>
+          Granddaddy Purple</button>
+          <button type = "button" onClick = {() => {
+            this.props.changeStrain("OG Kush");}}>
+          OG Kush</button>
+        </ div>
+      <p> Active strain: {strain.name} at {temp}&deg;F</p>
       </div>
     )
   };

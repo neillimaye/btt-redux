@@ -1,6 +1,6 @@
-const sativa = 'sativa';
-const indica = 'indica'; //for later...
-const hybrid = 'hybrid';
+// const sativa = 'sativa';
+// const indica = 'indica'; //for later...
+// const hybrid = 'hybrid';
 const cannabinoids = {
     "THC":{
       name:"Tetrahydrocannabidiol",
@@ -77,7 +77,7 @@ const strains = {
   "Charlotte's Web":{
     name: "Charlotte's Web",
     cans: [
-      cannabinoids["CBG-A"],
+      cannabinoids["CBG"],
       cannabinoids["CBD"],
       cannabinoids["THC"]
     ],
@@ -136,7 +136,7 @@ const strains = {
       cannabinoids["THC"],
       cannabinoids["CBN"],
       cannabinoids["CBC"],
-      cannabinoids["CBG"],      
+      cannabinoids["CBG"],
     ],
     terps:[
       terpenes["Myrcene"],
